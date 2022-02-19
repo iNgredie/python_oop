@@ -17,3 +17,28 @@
 Модель: {}
 Год выпуска: {}
 """
+
+
+class Phone:
+
+    brand: str
+    model: str
+    issue_year: int
+
+    def __init__(self, brand: str, model: str, issue_year: int):
+        self.brand = brand
+        self.model = model
+        self.issue_year = issue_year
+
+    def receive_call(self, name: str):
+        print(f'Звонит {name}')
+
+    def get_info(self) -> tuple:
+        return self.brand, self.model, self.issue_year
+
+    def __str__(self):
+        return (
+            f'Бренд: {self.brand}\n'
+            f'Модель: {self.model}\n'
+            f'Год выпуска: {self.issue_year}'
+        )

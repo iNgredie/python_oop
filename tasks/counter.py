@@ -17,14 +17,13 @@
 - метод __iter__
 - метод __next__
 """
-from collections.abc import Iterator
 
 
 class Counter:
     value: int
 
-    def __init__(self):
-        self.value = 0
+    def __init__(self, value: int = 0):
+        self.value = value
 
     def increase(self, num: int = 1):
         self.value += num
