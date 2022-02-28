@@ -36,7 +36,7 @@ class Phone:
     def get_info(self) -> tuple:
         return self.brand, self.model, self.issue_year
 
-    def __str__(self):
+    def __str__(self) -> str:
         return (
             f'Бренд: {self.brand}\n'
             f'Модель: {self.model}\n'
